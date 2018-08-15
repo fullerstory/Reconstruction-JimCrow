@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fuller Story of Franklin</title>
+  <meta name="author" content="BradDavis">
+  <meta name="description" content="Fuller Story was created to provide a fuller story of the history of Franklin. The primary purpose is to incorporate all those affected by the actions leading up to the Civil War through the Jim Crow era. The goal is to create historical markers to facilitate conversations that lead to reconciliation.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000">
+  <meta name="msapplication-navbutton-color" content="#000000">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+  <meta property="og:image" content="https://cdn.rawgit.com/fullerstory/fullerstory.github.io/cebc9013/fullerStoryStatue.jpg">
+  <style name="AppTheme" parent="AppBaseTheme">
+  <style>
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+    @media screen and (max-width: 1100px){
+      #background{
+        position: fixed;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+      }
+      .heading{
+        position: fixed;
+        width: 100%;
+        height: 19vw;
+        font-family: 'Cinzel', serif;
+        top: 0px;
+        left: 0px;
+        text-align: center;
+        line-height: 1;
+        background-color: black;
+        color: #E0A10E;
+        z-index: 5;
+      }
+      #leftHeading{
+        position: relative;
+        top: -5.5vw;
+        display: inline-block;
+        font-size: 3vw;
+      }
+      #bigHeading{
+        position: relative;
+        top: -5.5vw;
+        display: inline-block;
+        font-size: 7vw;
+      }
+      #rightHeading{
+        position: relative;
+        top: -5.5vw;
+        display: inline-block;
+        font-size: 3vw;
+      }
+      #tagHeading{
+        position: relative;
+        top: -15vw;
+        padding-top: 0%;
+        font-size: 3vw;
+      }
+      #fullerStoryPic{
+        position: relative;
+        width: 40%;
+        margin-top: 19.5%;
+        margin-left: 30%;
+        z-index: 4;
+      }
+      #mainText{
+        position: relative;
+        text-align: center;
+        top: 0vw;
+        font-size: 3vw;
+        font-weight: bold;
+        margin-left: 5%;
+        margin-right: 5%;
+        line-height: 1;
+        z-index: 3;
+      }
+      #listItems{
+        position: relative;
+        text-align: center;
+        margin-top: 3vw;
+        font-size: 3vw;
+        font-weight: bold;
+        margin-left: 9%;
+        margin-right: 5%;
+        z-index: 3;
+        margin-bottom: 5%;
+      }
+      #menu{
+        position: relative;
+        display: inline-block;
+        top: -19.5vw;
+        font-size: 2vw;
+        padding-top: 1%;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-bottom: 0px;
+        text-decoration: none;
+        color: white;
+      }
+      #menu:hover{
+        color: #E0A10E;
+      }
+    }
+    @media screen and (min-width: 1101px){
+      #background{
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        z-index: 1;
+      }
+      .heading{
+        position: fixed;
+        width: 100%;
+        height: 9.5vw;
+        font-family: 'Cinzel', serif;
+        top: 0px;
+        padding-top: 1vw;
+        left: 0px;
+        text-align: center;
+        line-height: 1;
+        background-color: black;
+        color: #E0A10E;
+        z-index: 5;
+      }
+      #leftHeading{
+        position: relative;
+        top: -5.5vw;
+        display: inline-block;
+        font-size: 3vw;
+      }
+      #bigHeading{
+        position: relative;
+        top: -5.5vw;
+        display: inline-block;
+        font-size: 5vw;
+      }
+      #rightHeading{
+        position: relative;
+        top: -5.5vw;
+        display: inline-block;
+        font-size: 3vw;
+      }
+      #tagHeading{
+        position: relative;
+        top: -12.5vw;
+        padding-top: 0%;
+        font-size: 2vw;
+      }
+      #fullerStoryPic{
+        position: relative;
+        width: 30%;
+        margin-top: 11%;
+        margin-left: 68%;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        z-index: 4;
+      }
+      #mainText{
+        position: absolute;
+        text-align: center;
+        top: 11vw;
+        width: 60%;
+        margin-left: 2.5%;
+        font-size: 2vw;
+        font-weight: bold;
+        line-height: 1;
+        z-index: 3;
+      }
+      #listItems{
+        position: relative;
+        text-align: center;
+        top: -16vw;
+        width: 60%;
+        margin-left: 2.5%;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        font-size: 2vw;
+        font-weight: bold;
+        line-height: 1;
+        z-index: 3;
+      }
+      #menu{
+        position: relative;
+        display: inline-block;
+        top: -16vw;
+        font-size: 1.5vw;
+        padding-top: 1%;
+        padding-left: 1.25%;
+        padding-right: 1.25%;
+        padding-bottom: 0px;
+        text-decoration: none;
+        color: white;
+      }
+      #menu:hover{
+        color: #E0A10E;
+      }
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+
+</head>
+
+<body>
+  <img src="fullerStoryBackground.jpg" id="background">
+  <div class="heading">
+    <p id="leftHeading">Seeking To Tell A &nbsp</p>
+    <p id="bigHeading">Fuller Story</p>
+    <p id="rightHeading">&nbsp Of Franklin</p>
+    <p id="tagHeading">Learning From Our Past To Reconcile Our Future</p>
+    <a href="https://www.fullerstory.org/" id="menu"><br>Home</a>
+    <a href="https://www.fullerstory.org/USCT" id="menu"><br>United States Colored Troops</a>
+    <a href="https://www.fullerstory.org/Courthouse&MarketHouse" id="menu">Courthouse/Market House</a>
+    <a href="https://www.fullerstory.org/1867Riot" id="menu">1867 Riot</a>
+    <a href="https://www.fullerstory.org/Reconstruction-JimCrow" id="menu">USCT Statue</a>
+</div>
+
+  <img src="fullerStoryPlaque.jpg" id="fullerStoryPic">
+
+  <p id="mainText">United States Colored Troops Statue<br></p>
+  <p id="listItems">The ultimate goal of a “Fuller Story” is to erect a statue of a USCT Soldier.
+The goal is for this soldier to be placed inside the City Limits.
+The exact location has yet to be determined.
+
+</p>
+
+</body>
+</html>
